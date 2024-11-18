@@ -7,6 +7,7 @@ import androidx.navigation.compose.composable
 
 import com.elarreglador.pmm_parcial1.screens.Uno
 import com.elarreglador.pmm_parcial1.screens.Dos
+import com.elarreglador.pmm_parcial1.screens.SplashScreen
 
 @Composable
 fun Navigator() {
@@ -18,8 +19,11 @@ fun Navigator() {
     val navController = androidx.navigation.compose.rememberNavController()
     androidx.navigation.compose.NavHost(
         navController = navController,
-        startDestination = "Uno"
+        startDestination = "SplashScreen"
     ) {
+        composable("SplashScreen") {
+            SplashScreen(navController)
+        }
         composable("Uno") {
             Uno(navController, listado)
         }
