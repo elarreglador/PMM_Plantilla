@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.elarreglador.pmm_parcial1"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.elarreglador.pmm_parcial1"
